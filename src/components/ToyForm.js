@@ -9,6 +9,7 @@ function ToyForm({onSubmit}) {
 function handleChange(e){
 const key = e.target.name
 setFormData({
+  ...formData,
   [key]: e.target.value
 })
 }
